@@ -4,7 +4,7 @@
 #
 Name     : perl-Sub-Info
 Version  : 0.002
-Release  : 2
+Release  : 3
 URL      : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Summary  : 'Tool for inspecting subroutines.'
@@ -12,7 +12,6 @@ Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-1.0
 Requires: perl-Sub-Info-doc
 BuildRequires : perl(Importer)
-BuildRequires : perl(Test2::Tools::Tiny)
 
 %description
 NAME
@@ -32,6 +31,9 @@ doc components for the perl-Sub-Info package.
 %setup -q -n Sub-Info-0.002
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
@@ -45,7 +47,7 @@ fi
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make TEST_VERBOSE=1 test
 
 %install
@@ -62,7 +64,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/Sub/Info.pm
+/usr/lib/perl5/site_perl/5.26.0/Sub/Info.pm
 
 %files doc
 %defattr(-,root,root,-)
