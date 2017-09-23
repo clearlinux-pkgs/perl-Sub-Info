@@ -4,7 +4,7 @@
 #
 Name     : perl-Sub-Info
 Version  : 0.002
-Release  : 3
+Release  : 4
 URL      : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Summary  : 'Tool for inspecting subroutines.'
@@ -64,7 +64,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/Sub/Info.pm
+/usr/lib/perl5/site_perl/5.26.1/Sub/Info.pm
 
 %files doc
 %defattr(-,root,root,-)
