@@ -4,10 +4,10 @@
 #
 Name     : perl-Sub-Info
 Version  : 0.002
-Release  : 14
+Release  : 15
 URL      : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
-Summary  : 'Tool for inspecting subroutines.'
+Summary  : Tool for inspecting subroutines.
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Sub-Info-license = %{version}-%{release}
@@ -24,6 +24,7 @@ Tool to inspect subroutines.
 Summary: dev components for the perl-Sub-Info package.
 Group: Development
 Provides: perl-Sub-Info-devel = %{version}-%{release}
+Requires: perl-Sub-Info = %{version}-%{release}
 
 %description dev
 dev components for the perl-Sub-Info package.
