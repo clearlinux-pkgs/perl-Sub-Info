@@ -7,7 +7,7 @@
 #
 Name     : perl-Sub-Info
 Version  : 0.002
-Release  : 28
+Release  : 29
 URL      : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
 Summary  : 'Tool for inspecting subroutines.'
